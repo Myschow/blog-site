@@ -1,26 +1,131 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0a;
+  --foreground: #00ff00;
+  /* Cyber Colors */
+  --pixel-blue: #00ccff;
+  --pixel-cyan: #00ffff;
+  --pixel-green: #00ff00;
+  --pixel-purple: #ff00ff;
+  --pixel-dark: #001122;
+  --pixel-darker: #000811;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-pixel-blue: var(--pixel-blue);
+  --color-pixel-cyan: var(--pixel-cyan);
+  --color-pixel-green: var(--pixel-green);
+  --color-pixel-purple: var(--pixel-purple);
+  --color-pixel-dark: var(--pixel-dark);
+  --color-pixel-darker: var(--pixel-darker);
+  
+  /* Custom animations */
+  --animate-pulse-slow: pulse-slow 4s ease-in-out infinite;
+  --animate-float-medium: float-medium 6s ease-in-out infinite;
+  --animate-float-fast: float-fast 3s ease-in-out infinite;
+  --animate-slide-wave: slide-wave 20s linear infinite;
+  --animate-slide-wave-reverse: slide-wave-reverse 25s linear infinite;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Custom animation keyframes */
+@keyframes float-particle-fade {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: var(--start-opacity, 0.8);
   }
+  25% {
+    transform: translate(calc(var(--move-x, 50px) * 0.3), calc(var(--move-y, 50px) * 0.3)) scale(0.8);
+    opacity: calc(var(--start-opacity, 0.8) * 0.7);
+  }
+  50% {
+    transform: translate(calc(var(--move-x, 50px) * 0.6), calc(var(--move-y, 50px) * 0.6)) scale(0.6);
+    opacity: calc(var(--start-opacity, 0.8) * 0.4);
+  }
+  75% {
+    transform: translate(calc(var(--move-x, 50px) * 0.8), calc(var(--move-y, 50px) * 0.8)) scale(0.4);
+    opacity: calc(var(--start-opacity, 0.8) * 0.2);
+  }
+  100% {
+    transform: translate(var(--move-x, 50px), var(--move-y, 50px)) scale(0.2);
+    opacity: 0;
+  }
+}
+/* @keyframes float-particle-fade {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: var(--start-opacity, 0.8);
+  }
+  25% {
+    transform: translate(calc(var(--move-x, 50px) * 0.5), calc(var(--move-y, -30px) * 0.5)) scale(0.8);
+    opacity: calc(var(--start-opacity, 0.8) * 0.7);
+  }
+  50% {
+    transform: translate(var(--move-x, 50px), var(--move-y, -30px)) scale(0.6);
+    opacity: calc(var(--start-opacity, 0.8) * 0.4);
+  }
+  75% {
+    transform: translate(calc(var(--move-x, 50px) * 1.2), calc(var(--move-y, -30px) * 1.2)) scale(0.4);
+    opacity: calc(var(--start-opacity, 0.8) * 0.2);
+  }
+  100% {
+    transform: translate(calc(var(--move-x, 50px) * 1.5), calc(var(--move-y, -30px) * 1.5)) scale(0.2);
+    opacity: 0;
+  }
+} */
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.1); }
+}
+
+@keyframes float-medium {
+  0%, 100% { transform: translateY(0px) scale(1); }
+  50% { transform: translateY(-20px) scale(1.05); }
+}
+
+@keyframes float-fast {
+  0%, 100% { transform: translateX(0px) translateY(0px); }
+  25% { transform: translateX(10px) translateY(-10px); }
+  50% { transform: translateX(0px) translateY(-20px); }
+  75% { transform: translateX(-10px) translateY(-10px); }
+}
+
+@keyframes slide-wave {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 100% 100%; }
+}
+
+@keyframes slide-wave-reverse {
+  0% { background-position: 100% 100%; }
+  100% { background-position: 0% 0%; }
+}
+
+@keyframes float-particle {
+  0%, 100% { 
+    transform: translateY(0px) translateX(0px);
+    opacity: 0.3;
+  }
+  25% { 
+    transform: translateY(-20px) translateX(10px);
+    opacity: 0.6;
+  }
+  50% { 
+    transform: translateY(-40px) translateX(0px);
+    opacity: 0.8;
+  }
+  75% { 
+    transform: translateY(-20px) translateX(-10px);
+    opacity: 0.6;
+  }
+
+
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  image-rendering: pixelated;
 }
