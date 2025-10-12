@@ -8,8 +8,10 @@ import Navigation from './article_nav';
 import ArticlePage_Footer from './articlepage_footer';
 import ArticleFooter from './article_footer';
 import ArticleContent from './article_format';
+import Sound from '@/app/components/sound';
 
 const Page = async ({ params }: { params: { article_id: string } }) => {
+    
     const { article_id } = await params;
 
     // Mock article data based on the ID
@@ -68,6 +70,7 @@ const Page = async ({ params }: { params: { article_id: string } }) => {
     return (
 
         <div className="min-h-screen bg-pixel-darker">
+            <Sound />
             <AnimatedBackground />
             {/* Content */}
             <div className="relative h-screen overflow-y-auto">
