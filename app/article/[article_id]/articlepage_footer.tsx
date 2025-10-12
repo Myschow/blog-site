@@ -7,7 +7,7 @@ const ArticlePage_Footer = () => {
         <div className="w-2 h-2 bg-pixel-purple animate-pulse" style={{animationDelay: '0.4s'}}></div>
       </div>
       <p className="text-pixel-cyan text-sm">
-        &gt; ARTICLE_VIEW_ACTIVE | SYSTEM: ONLINE
+        &gt; ARTICLE_VIEW_ACTIVE | SYSTEM: ONLINE 
       </p>
       <p className="text-pixel-green text-xs mt-2">
         [ESC]BACK [HOME]MENU [F5]REFRESH

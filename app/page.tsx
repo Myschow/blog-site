@@ -3,10 +3,13 @@ import HomePage_header from './components/Homepage_header';
 import HomePage_footer from './components/Homepage_footer';
 import AnimatedBackground from './components/background_animation';
 import BlogPostsSection from './components/BlogPostsSection';
+import Sound from './components/sound';
 
 export default function Page() {
   return (
+
     <div className="min-h-screen bg-pixel-darker">
+      <Sound />
       <AnimatedBackground />
       
       <div className="relative h-screen overflow-y-auto">
