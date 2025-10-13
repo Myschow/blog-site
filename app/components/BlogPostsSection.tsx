@@ -6,7 +6,7 @@ const BlogPostsSection = async () => {
   // For example:
   // const posts = await fetchBlogPosts();
   // const userData = await getUserData();
-{/* Scrollable Blog Posts with transform-origin fix */}
+
   return (
     
     <div className="space-y-6 pb-16 pt-4 transform-gpu">
@@ -27,9 +27,9 @@ const BlogPostsSection = async () => {
         </div>
         
         <p className="text-pixel-cyan text-sm mb-4 leading-relaxed">
-          // OPTIMIZING_BUNDLES...
-          // CACHE_STRATEGIES...
-          // LOAD_TIME: 0.5S
+          {/* OPTIMIZING_BUNDLES... */}
+          {/* CACHE_STRATEGIES... */}
+          {/* LOAD_TIME: 0.5S */}
         </p>
         <div className="flex justify-between items-center">
           <span className="text-pixel-green text-xs">2024-03-05</span>
@@ -54,9 +54,9 @@ const BlogPostsSection = async () => {
           PERFORMANCE.OPT
         </h2>
         <p className="text-pixel-cyan text-sm mb-4 leading-relaxed">
-          // OPTIMIZING_BUNDLES...
-          // CACHE_STRATEGIES...
-          // LOAD_TIME: 0.5S
+          {/* OPTIMIZING_BUNDLES... */}
+          {/* CACHE_STRATEGIES... */}
+          {/* LOAD_TIME: 0.5S */}
         </p>
         <div className="flex justify-between items-center">
           <span className="text-pixel-green text-xs">2024-03-05</span>
@@ -83,9 +83,9 @@ const BlogPostsSection = async () => {
           PERFORMAN
         </h2>
         <p className="text-pixel-cyan text-sm mb-4 leading-relaxed">
-          // OPTIMIZING_BUNDLES...
-          // CACHE_STRATEGIES...
-          // LOAD_TIME: 0.5S
+          {/* OPTIMIZING_BUNDLES... */}
+          {/* CACHE_STRATEGIES... */}
+          {/* LOAD_TIME: 0.5S */}
         </p>
         <div className="flex justify-between items-center">
           <span className="text-pixel-green text-xs">2024-03-05</span>
@@ -111,9 +111,9 @@ const BlogPostsSection = async () => {
           PERFORMANCE.OPT
         </h2>
         <p className="text-pixel-cyan text-sm mb-4 leading-relaxed">
-          // OPTIMIZING_BUNDLES...
-          // CACHE_STRATEGIES...
-          // LOAD_TIME: 0.5S
+          {/* OPTIMIZING_BUNDLES... */}
+          {/* CACHE_STRATEGIES... */}
+          {/* LOAD_TIME: 0.5S */}
         </p>
         <div className="flex justify-between items-center">
           <span className="text-pixel-green text-xs">2024-03-05</span>
@@ -137,9 +137,9 @@ const BlogPostsSection = async () => {
           PERFORMANCE.OPT
         </h2>
         <p className="text-pixel-cyan text-sm mb-4 leading-relaxed">
-          // OPTIMIZING_BUNDLES...
-          // CACHE_STRATEGIES...
-          // LOAD_TIME: 0.5S
+          {/* OPTIMIZING_BUNDLES... */}
+          {/* CACHE_STRATEGIES... */}
+          {/* LOAD_TIME: 0.5S */}
         </p>
         <div className="flex justify-between items-center">
           <span className="text-pixel-green text-xs">2024-03-05</span>

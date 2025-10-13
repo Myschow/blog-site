@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1760329058497" clover="3.2.0">
+  <project timestamp="1760329058497" name="All files">
+    <metrics statements="79" coveredstatements="35" conditionals="17" coveredconditionals="7" methods="21" coveredmethods="9" elements="117" coveredelements="51" complexity="0" loc="79" ncloc="79" packages="3" files="12" classes="12"/>
+    <package name="app">
+      <metrics statements="11" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <file name="layout.tsx" path="C:\my_blog_site\app\layout.tsx">
+        <metrics statements="5" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+      </file>
+      <file name="page.tsx" path="C:\my_blog_site\app\page.tsx">
+        <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="app.article.[article_id]">
+      <metrics statements="29" coveredstatements="0" conditionals="8" coveredconditionals="0" methods="7" coveredmethods="0"/>
+      <file name="article_footer.tsx" path="C:\my_blog_site\app\article\[article_id]\article_footer.tsx">
+        <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+      </file>
+      <file name="article_format.tsx" path="C:\my_blog_site\app\article\[article_id]\article_format.tsx">
+        <metrics statements="4" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="65" count="0" type="stmt"/>
+      </file>
+      <file name="article_nav.tsx" path="C:\my_blog_site\app\article\[article_id]\article_nav.tsx">
+        <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+      </file>
+      <file name="articlepage_footer.tsx" path="C:\my_blog_site\app\article\[article_id]\articlepage_footer.tsx">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+      </file>
+      <file name="page.tsx" path="C:\my_blog_site\app\article\[article_id]\page.tsx">
+        <metrics statements="15" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="64" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="73" count="0" type="stmt"/>
+        <line num="112" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="app.components">
+      <metrics statements="39" coveredstatements="35" conditionals="9" coveredconditionals="7" methods="12" coveredmethods="9"/>
+      <file name="BlogPostsSection.tsx" path="C:\my_blog_site\app\components\BlogPostsSection.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="160" count="15" type="stmt"/>
+      </file>
+      <file name="Homepage_footer.tsx" path="C:\my_blog_site\app\components\Homepage_footer.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="19" count="4" type="stmt"/>
+      </file>
+      <file name="Homepage_header.tsx" path="C:\my_blog_site\app\components\Homepage_header.tsx">
+        <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="31" count="60" type="stmt"/>
+        <line num="43" count="6" type="stmt"/>
+      </file>
+      <file name="background_animation.tsx" path="C:\my_blog_site\app\components\background_animation.tsx">
+        <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="26" count="1500" type="stmt"/>
+        <line num="27" count="1500" type="stmt"/>
+        <line num="28" count="1500" type="stmt"/>
+        <line num="29" count="1500" type="stmt"/>
+        <line num="32" count="1500" type="stmt"/>
+        <line num="33" count="1500" type="stmt"/>
+        <line num="34" count="1500" type="stmt"/>
+        <line num="35" count="1500" type="stmt"/>
+        <line num="37" count="1500" type="stmt"/>
+        <line num="60" count="10" type="stmt"/>
+      </file>
+      <file name="sound.tsx" path="C:\my_blog_site\app\components\sound.tsx">
+        <metrics statements="17" coveredstatements="13" conditionals="5" coveredconditionals="3" methods="6" coveredmethods="3"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="10" type="stmt"/>
+        <line num="11" count="10" type="stmt"/>
+        <line num="13" count="10" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="35" count="10" type="stmt"/>
+        <line num="36" count="8" type="cond" truecount="1" falsecount="1"/>
+        <line num="37" count="8" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="41" count="8" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="76" count="8" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

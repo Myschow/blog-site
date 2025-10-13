@@ -45,11 +45,10 @@ const AnimatedBackground = () => {
                 top: `${Math.random() * 100}%`,
                 opacity: startOpacity,
                 animation: `float-particle-fade ${duration}s infinite ease-in-out ${delay}s`,
-                // Custom CSS properties for random movement
-                ['--move-x' as any]: `${moveX}px`,
-                ['--move-y' as any]: `${moveY}px`,
-                ['--start-opacity' as any]: startOpacity,
-              }}
+                ['--move-x' as string]: `${moveX}px`,
+                ['--move-y' as string]: `${moveY}px`,
+                ['--start-opacity' as string]: startOpacity,
+              } as React.CSSProperties}
             />
           );
         })}

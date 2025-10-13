@@ -1,8 +1,7 @@
-import Link from 'next/link';
+
 import React from "react";
 import AnimatedBackground from '../../components/background_animation';
 import HomePage_header  from '../../components/Homepage_header';
-import HomePage_footer from '../../components/Homepage_footer';
 import Navigation from './article_nav';
 
 import ArticlePage_Footer from './articlepage_footer';
@@ -10,13 +9,19 @@ import ArticleFooter from './article_footer';
 import ArticleContent from './article_format';
 import Sound from '@/app/components/sound';
 
-const Page = async ({ params }: { params: { article_id: string } }) => {
+const Page = async ({ params }: { params: Promise<{ article_id: string }> }) => {
     
     const { article_id } = await params;
 
     // Mock article data based on the ID
-    const getArticleData = (articleId: string) => {
-        const articles: { [key: string]: any } = {
+    const getArticleData = () => {
+        const articles: Record<string, {
+            title: string;
+            date: string;
+            category: string;
+            description: string;
+            content: string[];
+        }> = {
             '1': {
                 title: 'PERFORMANCE.OPT',
                 date: '2024-03-05',
@@ -65,7 +70,7 @@ const Page = async ({ params }: { params: { article_id: string } }) => {
         };
     };
 
-    const article = getArticleData(article_id);
+    const article = getArticleData();
 
     return (
 

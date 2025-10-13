@@ -1,13 +1,12 @@
 "use client";
 import React, { useState, useEffect, useRef } from 'react';
 
-interface SoundProps {
-    isPlaying: boolean;
-    userInteracted: boolean;
-}
+// interface SoundProps {
+//     isPlaying: boolean;
+//     userInteracted: boolean;
+// }
 
 const Sound = () => {
-    const [isPlaying, setIsPlaying] = useState(false);
     const [userInteracted, setUserInteracted] = useState(false);
     const audioRef = useRef<HTMLAudioElement>(null);
 
@@ -15,23 +14,22 @@ const Sound = () => {
         setUserInteracted(true);
         if (audioRef.current) {
             audioRef.current.play()
-                .then(() => setIsPlaying(true))
                 .catch(error => console.error('Audio play failed:', error));
         }
     };
 
-    const toggleSound = () => {
-        if (audioRef.current) {
-            if (isPlaying) {
-                audioRef.current.pause();
-                setIsPlaying(false);
-            } else {
-                audioRef.current.play()
-                    .then(() => setIsPlaying(true))
-                    .catch(error => console.error('Audio play failed:', error));
-            }
-        }
-    };
+    // const toggleSound = () => {
+    //     if (audioRef.current) {
+    //         if (isPlaying) {
+    //             audioRef.current.pause();
+    //             setIsPlaying(false);
+    //         } else {
+    //             audioRef.current.play()
+    //                 .then(() => setIsPlaying(true))
+    //                 .catch(error => console.error('Audio play failed:', error));
+    //         }
+    //     }
+    // };
 
     // Debug: Check if audio loads
     useEffect(() => {
