@@ -1,3 +1,0 @@
-module.exports=[7480,a=>{a.v({className:"silkscreen_7347b37f-module__lNntdG__className",variable:"silkscreen_7347b37f-module__lNntdG__variable"})},33290,a=>{"use strict";a.s(["default",()=>f,"metadata",()=>e],33290);var b=a.i(7997),c=a.i(7480);let d={className:c.default.className,style:{fontFamily:"'Silkscreen', 'Silkscreen Fallback'",fontStyle:"normal"}};null!=c.default.variable&&(d.variable=c.default.variable);let e={title:"Tech Blog",description:"Retro-style pixel tech blog"};function f({children:a}){return(0,b.jsx)("html",{lang:"en",children:(0,b.jsx)("body",{className:`${d.className} antialiased`,children:a})})}}];
-
-//# sourceMappingURL=%5Broot-of-the-server%5D__cd671092._.js.map

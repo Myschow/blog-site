@@ -9,8 +9,16 @@ import ArticleFooter from './article_footer';
 import ArticleContent from './article_format';
 import Sound from '@/app/components/sound';
 
+export async function generateStaticParams() {
+    // Pre-generate static pages for known articles
+    return [
+        { article_id: '1' },
+        { article_id: 'nextjs-setup' }
+    ];
+}
+
 const Page = async ({ params }: { params: Promise<{ article_id: string }> }) => {
-    
+
     const { article_id } = await params;
 
     // Mock article data based on the ID
