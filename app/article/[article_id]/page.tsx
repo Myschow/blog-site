@@ -83,7 +83,6 @@ const Page = async ({ params }: { params: Promise<{ article_id: string }> }) => 
     return (
 
         <div className="min-h-screen bg-pixel-darker">
-            <Sound />
             <AnimatedBackground />
             {/* Content */}
             <div className="relative h-screen overflow-y-auto">

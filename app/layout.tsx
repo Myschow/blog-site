@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Silkscreen } from "next/font/google";
 import "./globals.css";
+import Sound from "./components/sound";
 
 const silkscreen = Silkscreen({
   weight: ["400", "700"],
@@ -21,6 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${silkscreen.className} antialiased`}>
+        <Sound />
         {children}
       </body>
     </html>
