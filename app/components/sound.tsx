@@ -93,7 +93,7 @@ const Sound = () => {
                     onClick={handleUserInteraction}
                     style={{ imageRendering: 'pixelated' }}
                 >
-                    <span className="text-[0.6rem] sm:text-[0.65rem]">Don't</span>
+                    <span className="text-[0.6rem] sm:text-[0.65rem]">Don&apos;t</span>
                 </button>
             )}
         </div>

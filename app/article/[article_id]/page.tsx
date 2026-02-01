@@ -28,7 +28,7 @@ const Page = async ({ params }: { params: Promise<{ article_id: string }> }) => 
                         <div id="top" className="space-y-6 pb-16 pt-4 transform-gpu">
                             <article className="border-4 border-pixel-cyan bg-pixel-dark/90 backdrop-blur-sm p-6">
                                 <h1 className="text-2xl text-pixel-cyan">ARTICLE_NOT_FOUND.TXT</h1>
-                                <p className="text-pixel-cyan mt-4">// SYSTEM_ERROR: 404</p>
+                                <p className="text-pixel-cyan mt-4">{'// SYSTEM_ERROR: 404'}</p>
                                 <p className="text-pixel-cyan">Article not found. Please check the URL and try again.</p>
                             </article>
                         </div>
