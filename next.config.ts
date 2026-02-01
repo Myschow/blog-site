@@ -6,9 +6,6 @@ const nextConfig: NextConfig = {
     optimizePackageImports: ["@tailwindcss/postcss"],
   },
 
-  // Enable standalone output for containerized deployments
-  output: 'standalone',
-
   // Image optimization
   images: {
     formats: ['image/webp', 'image/avif'],

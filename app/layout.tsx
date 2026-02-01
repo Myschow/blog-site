@@ -22,8 +22,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${silkscreen.className} antialiased`}>
-        <Sound />
         {children}
+        <Sound />
       </body>
     </html>
   );
